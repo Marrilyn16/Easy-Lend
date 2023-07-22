@@ -1,7 +1,7 @@
 package com.easyLend.userservice.exceptions;
 
 public class PasswordNotFoundException extends RuntimeException{
-    public PasswordNotFoundException(String messgae){
-        super(messgae);
+    public PasswordNotFoundException(String message){
+        super(message);
     }
 }

@@ -10,12 +10,12 @@ import lombok.Setter;
 
 
 public class RegisterRequest {
-    @NotBlank
+    @NotBlank(message = "Email cannot be blank")
     private String email;
-    @NotBlank
+    @NotBlank(message = "FullName cannot be blank")
     private String fullName;
     private UserType userType;
-    @NotBlank
+    @NotBlank(message = "password cannot be blank")
     private String password;
 
 

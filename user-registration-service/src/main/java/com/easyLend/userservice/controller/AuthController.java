@@ -29,7 +29,7 @@ public class AuthController {
         return new ResponseEntity<>(apiResponse, HttpStatus.CREATED);
     }
     @PostMapping("/login")
-    public ResponseEntity<ApiResponse<LoginResponse>> login (@RequestBody LoginRequest loginRequest) {
+    public ResponseEntity<ApiResponse<LoginResponse>> login (@Validated@RequestBody LoginRequest loginRequest) {
         ApiResponse<LoginResponse> apiResponse = new ApiResponse<>(appUserService.loginAuth(loginRequest));
         return new ResponseEntity<>(apiResponse, HttpStatus.OK);
     }

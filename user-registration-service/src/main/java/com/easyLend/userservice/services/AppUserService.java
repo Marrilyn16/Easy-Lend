@@ -1,7 +1,6 @@
 package com.easyLend.userservice.services;
 
 import com.easyLend.userservice.domain.constant.UserType;
-import com.easyLend.userservice.domain.entity.UserProfile;
 import com.easyLend.userservice.request.LoginRequest;
 import com.easyLend.userservice.request.RegisterRequest;
 import com.easyLend.userservice.response.LoginResponse;

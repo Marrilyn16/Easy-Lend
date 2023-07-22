@@ -1,11 +1,9 @@
 package com.easyLend.userservice.event;
 
 import com.easyLend.userservice.domain.entity.AppUser;
-import lombok.Data;
 import lombok.Getter;
 import org.springframework.context.ApplicationEvent;
 
-import java.time.Clock;
 @Getter
 
 public class PasswordEvent extends ApplicationEvent {

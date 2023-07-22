@@ -66,6 +66,7 @@ public class VerificationServiceImpl implements VerificationEmailService {
         }
         appUser.setRegistrationStatus(true);
         appUserRepository.save(appUser);
+
         return "USER VERIFIED";
 
     }

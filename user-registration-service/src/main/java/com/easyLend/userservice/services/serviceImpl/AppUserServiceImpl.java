@@ -84,7 +84,7 @@ public class AppUserServiceImpl implements AppUserService {
                 System.out.println(token.getAccessToken());
                 jwtTokenRepository.delete(token);
             }
-            String jwt = jwtService.generateToken(user,user.getUserId());
+            String jwt = jwtService.generateToken(user,user.getUserId(),user.getUserType());
             String refresh = jwtService.generateRefreshToken(user);
             Authentication authentication = new UsernamePasswordAuthenticationToken(
                     user.getEmail(),user.getPassword());
